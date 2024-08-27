@@ -23,5 +23,14 @@ function knightMoves(start, end) {
             return path; // Return the path taken to reach the end
         }
 
-        
+        // Explore all possible knight moves
+        for (const [dx, dy] of moves) {
+            const newX = x + dx;
+            const newY = y + dy;
+
+            if (isValid(newX, newY) && !visited.has(`${newX},${newY}`)) {
+                visited.add(`${newX},${newY}`);
+                queue.push({ position: [newX, newY], path: [...path, [newX, newY]] });
+            }
+        }
 }
