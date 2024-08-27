@@ -36,3 +36,5 @@ function knightMoves(start, end) {
     }
     return [];    
 }
+
+knightMoves([3, 3], [4, 3]);
