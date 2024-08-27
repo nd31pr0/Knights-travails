@@ -33,4 +33,6 @@ function knightMoves(start, end) {
                 queue.push({ position: [newX, newY], path: [...path, [newX, newY]] });
             }
         }
+    }
+    return [];    
 }
