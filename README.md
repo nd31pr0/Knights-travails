@@ -31,7 +31,6 @@ To get started with the project, you will need to have a JavaScript environment 
 4. Call the function with the desired starting and ending positions.
 
 ### Example
-```javascript
 knightMoves([0, 0], [7, 7]);
 
 ## The Odin Project (Web development) Completed projects
