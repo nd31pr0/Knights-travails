@@ -7,4 +7,9 @@ function knightMoves(start, end) {
     function isValid(x, y) {
         return x >= 0 && x < 8 && y >= 0 && y < 8;
     }
+
+    const queue = [{ position: start, path: [start] }];
+    const visited = new Set();
+    visited.add(`${start[0]},${start[1]}`);
+
 }
